@@ -1,0 +1,46 @@
+<!-- add_device.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Device</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card w-70 mx-auto">
+            <div class="card-header bg-danger text-white">
+                <h5 class="card-title">Add Device</h5>
+            </div>
+            <div class="card-body">
+                <h1>Add Device</h1>
+                <form action="/add_device" method="post">
+                    <label class="label-text" for="device_name">Device Name:</label>
+                    <input type="text" name="device_name" required>
+                    <br>
+                    <label class="label-text" for="device_description">Description:</label>
+                    <input type="text" name="device_description" required>
+                    <br>
+                    <label class="label-text" for="device_cost">Device Cost:</label>
+                    <input type="number" name="device_cost" step="0.01" required>
+                    <br>
+                    <label class="label-text" for="date_purchased">Date Purchased (Optional):</label>
+                    <input type="date" name="date_purchased">
+                    <br>
+                    <label class="label-text" for="condition">Condition:</label>
+                    <input type="text" name="condition" required>
+                    <br>
+                    <label class="label-text" for="transaction_id">Transaction ID (optional):</label>
+                    <input type="text" name="transaction_id">
+                    <br>
+                    <input class="btn-save" type="submit" value="Add Device">
+                </form>
+                <a href="/"> Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

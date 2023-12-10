@@ -1,0 +1,48 @@
+/* Custom CSS for Half-Life Color Scheme */
+body {
+    background-color: #151515; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+.card-title {
+    color: #151515; /* Dark grey text color */
+    text-align: center; /* Center text in the label */
+}
+
+.card {
+    background-color: #292929; /* Dark gray card background */
+    border: 1px solid #151515; /* Slightly lighter gray border */
+    color: #ffffff; /* White text inside cards */
+    width: 60%; /* Set card width to 60% */
+    margin: auto; /* Center the card */
+    margin-top: 50px; /* Add top margin for spacing */
+    padding: 20px; /* Add padding for content */
+}
+
+.card-header {
+    background-color: #fb7e14; /* Orange card header */
+    color: #ffffff; /* White text in card header */
+    text-align: center; /* Center the text */
+}
+
+.form-group {
+    margin-top: 20px; /* Add space between input fields */
+    text-align: left; /* Align text to the left */
+}
+
+.label-text {
+    color: #151515; /* Dark grey text color */
+    text-align: center; /* Center text in the label */
+}
+
+.btn-save {
+    background-color: #28a745; /* Green save button */
+    border-color: #28a745; /* Green button border */
+    color: #ffffff; /* White text on the button */
+    width: 100%; /* Make button full width */
+}
+
+.btn-save:hover {
+    background-color: #218838; /* Darker green on button hover */
+    border-color: #218838; /* Darker green on button hover */
+}
